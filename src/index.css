@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+:root {
+  /*
+   * EXACT color codes from https://abbess.in/
+   * Pulled verbatim from the Elementor Global Kit stylesheet
+   * (wp-content/uploads/elementor/css/post-8.css, .elementor-kit-8).
+   *
+   * These 10 values are the complete official palette. No other hex
+   * colors are used anywhere in this project.
+   *
+   * Logo note: the official ABBESS Healthcare logo file
+   * (FOR-PPTs-DOCs-Copy.jpg) samples to #324E8F, which is the same
+   * brand navy as the published --e-global-color-c41626d (#324E8E)
+   * below (1-unit JPEG/PNG tolerance).
+   */
+  --abbess-primary-cyan: #6EC1E4;
+  --abbess-secondary-slate: #54595F;
+  --abbess-text-muted: #7A7A7A;
+  --abbess-accent-green: #61CE70;
+  --abbess-navy: #17224D;
+  --abbess-navy-overlay: rgba(23, 34, 77, 0.58);
+  --abbess-azure: #3393F0;
+  --abbess-lavender: #EDF1FC;
+  --abbess-white: #FFFFFF;
+  --abbess-ice: #EFFFFF;
+  --abbess-royal: #324E8E; /* --e-global-color-c41626d — logo + top bar navy */
+  --abbess-logo-navy: #324E8F; /* exact sample of the official logo bitmap */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: "Heebo", system-ui, -apple-system, sans-serif;
+    color: #17224D;
+    background-color: #FFFFFF;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Inter", system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Custom sleek scrollbar in ABBESS brand colors */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #EDF1FC;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #324E8E 0%, #3393F0 100%);
+  border-radius: 9999px;
+  border: 2px solid #EDF1FC;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #17224D;
+}
+
+/* 3D Perspective & Flip-Box Utilities */
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Subtle architectural grid & specular sheen */
+.abbess-grid-pattern {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(50, 78, 142, 0.11) 1px, transparent 0);
+  background-size: 26px 26px;
+}
+
+@keyframes sheenSweep {
+  0% {
+    transform: translateX(-130%) skewX(-22deg);
+  }
+  100% {
+    transform: translateX(230%) skewX(-22deg);
+  }
+}
+
+.group:hover .sheen-effect {
+  animation: sheenSweep 1.05s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.85;
+  }
+  70% {
+    transform: scale(2.15);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.15);
+    opacity: 0;
+  }
+}
+
+.animate-pulse-ring {
+  animation: pulseRing 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
