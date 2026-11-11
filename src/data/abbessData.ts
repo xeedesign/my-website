@@ -722,7 +722,7 @@ export const CONTACT_CONTENT = {
   title: "Contact Us",
   visitUsHeading: "Visit Us",
   corporateOffice:
-    "The Park Navi Mumbai. No 1, Nirmaladevi Marg, Sector 10, CBD Belapur Navi Mumbai, Maharashtra 400614 India",
+    "1102, Crystal Palace, Sec 20, CBD Belapur, Navi Mumbai, Maharashtra, India - 400614",
   euEntityName: "ABBESS Consultancy Limited",
   euEntityAddress: "San Gwann, Malta, EU Region",
   indiaEntityName: "ABBESS Healthcare OPC Private Limited",
