@@ -583,9 +583,9 @@ export const Layout: React.FC<LayoutProps> = ({
                   <span>
                     The Park Navi Mumbai.
                     <br />
-                    No 1, Nirmaladevi Marg, Sector 10,
+                    1102, Crystal Palace, Sec 20,
                     <br />
-                    CBD Belapur Navi Mumbai,
+                    CBD Belapur, Navi Mumbai,
                     <br />
                     Maharashtra 400614 India
                   </span>
@@ -607,7 +607,7 @@ export const Layout: React.FC<LayoutProps> = ({
 
                 <li className="rounded-xl border border-[#EDF1FC] bg-[#EDF1FC]/50 p-3">
                   <div className="font-bold text-[#17224D]">
-                    {CONTACT_CONTENT.indiaEntityName}
+                    {CONTACT_CONTENT.indiaEntitmt-1.5 text-sm font-medium leading-relaxed text-[#17224D]yName}
                   </div>
                   <button
                     type="button"
