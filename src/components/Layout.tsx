@@ -581,14 +581,12 @@ export const Layout: React.FC<LayoutProps> = ({
                 <li className="flex items-start gap-2.5">
                   <MapPin className="mt-1 h-4 w-4 shrink-0 text-[#3393F0]" />
                   <span>
-                    The Park Navi Mumbai.
-                    <br />
-                    1102, Crystal Palace, Sec 20,
-                    <br />
-                    CBD Belapur, Navi Mumbai,
-                    <br />
-                    Maharashtra 400614 India
-                  </span>
+  1102, Crystal Palace, Sec 20,
+  <br />
+  CBD Belapur, Navi Mumbai,
+  <br />
+  Maharashtra 400614 India
+</span>
                 </li>
 
                 <li className="rounded-xl border border-[#EDF1FC] bg-[#EDF1FC]/50 p-3">
@@ -606,10 +604,10 @@ export const Layout: React.FC<LayoutProps> = ({
                 </li>
 
                 <li className="rounded-xl border border-[#EDF1FC] bg-[#EDF1FC]/50 p-3">
-                  <div className="font-bold text-[#17224D]">
-                    {CONTACT_CONTENT.indiaEntitmt-1.5 text-sm font-medium leading-relaxed text-[#17224D]yName}
-                  </div>
-                  <button
+  <div className="font-bold text-[#17224D]">
+    {CONTACT_CONTENT.indiaEntityName}
+  </div>
+  <button
                     type="button"
                     onClick={() => handleNavClick("contact-us")}
                     className="mt-1 inline-flex items-center gap-1.5 text-left text-xs font-medium text-[#324E8E] transition hover:text-[#3393F0]"
