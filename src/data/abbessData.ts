@@ -34,7 +34,7 @@ export const ABBESS_ASSETS: Record<string, AssetSource> = {
     alt: "ABBESS Healthcare Emblem",
   },
   googleQr: {
-    local: "/assets/abbess-emblem.png",
+    local: "/assets/abbess.png",
     remote: "https://abbess.in/wp-content/uploads/2025/02/abbess.png",
     alt: "ABBESS Healthcare Google Profile QR Code",
   },
@@ -60,7 +60,7 @@ export const ABBESS_ASSETS: Record<string, AssetSource> = {
     alt: "Nurturing minds transforming healthcare through innovations & expertise",
   },
   bgMemphis: {
-    local: "/assets/bg-memphis.png",
+    local: "/assets/bg_memphis_1-e1625293192688.png",
     remote:
       "https://abbess.in/wp-content/uploads/2025/02/bg_memphis_1-e1625293192688.png",
     alt: "ABBESS Geometric Background",
@@ -71,37 +71,37 @@ export const ABBESS_ASSETS: Record<string, AssetSource> = {
     alt: "Pharmaceutical Solid Dosage Manufacturing Line",
   },
   bgLabDots: {
-    local: "/assets/bg-lab-101941.jpg",
+    local: "/assets/101941-1.jpg",
     remote: "https://abbess.in/wp-content/uploads/2025/02/101941-1.jpg",
     alt: "Scientific Wave Pattern Background",
   },
   bgServiceContract: {
-    local: "/assets/bg-service-10026.jpg",
+    local: "/assets/10026-1.jpg",
     remote: "https://abbess.in/wp-content/uploads/2025/02/10026-1.jpg",
     alt: "Pharmaceutical Dosage Forms Banner",
   },
   mapAbout: {
-    local: "/assets/map-about.png",
+    local: "/assets/facility/map-2.jpg",
     remote: "https://abbess.in/wp-content/uploads/2025/06/map2-1-1.png",
     alt: "ABBESS Global Presence Map – Malta, Europe & Navi Mumbai, India",
   },
   mapContact: {
-    local: "/assets/map-contact.png",
+    local: "/assets/map2-2.png",
     remote: "https://abbess.in/wp-content/uploads/2025/06/map2-2.png",
     alt: "ABBESS Global Locations – Malta, Europe & Navi Mumbai, India",
   },
   researchLab1: {
-    local: "/assets/research-1.png",
+    local: "/assets/facility/research (1).png",
     remote: "https://abbess.in/wp-content/uploads/2025/02/reserch.png",
     alt: "ABBESS Healthcare Formulation Development Laboratory",
   },
   researchLab2: {
-    local: "/assets/research-2.png",
+    local: "/assets/research.png",
     remote: "https://abbess.in/wp-content/uploads/2025/02/research.png",
     alt: "ABBESS Healthcare Analytical Method Development & Validation Laboratory",
   },
   hw1: {
-    local: "/assets/hw1.png",
+    local: "/assets/facility/hw1 (1).png",
     remote: "https://abbess.in/wp-content/uploads/2025/02/hw1.png",
     alt: "ABBESS Healthcare OPC Pvt. Ltd. R&D Scientific Team",
   },
@@ -116,7 +116,7 @@ export const ABBESS_ASSETS: Record<string, AssetSource> = {
     alt: "ABBESS Healthcare Formulation & Scale-Up Equipment Operation",
   },
   product1: {
-    local: "/assets/product1.png",
+    local: "/assets/facility/product1 (1).png",
     remote: "https://abbess.in/wp-content/uploads/2025/02/product1.png",
     alt: "ABBESS Healthcare Rapid Mixer Granulator & Process Equipment",
   },

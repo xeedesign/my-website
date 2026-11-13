@@ -56,7 +56,7 @@ export const SmartIcon: React.FC<{ iconPath: string; className?: string }> = ({
 };
 
 interface SmartImageProps extends React.ImgHTMLAttributes<HTMLImageElement> {
-  asset: AssetSource;
+  asset: AssetSource | string;
 }
 
 export const SmartImage: React.FC<SmartImageProps> = ({
@@ -65,23 +65,29 @@ export const SmartImage: React.FC<SmartImageProps> = ({
   alt,
   ...rest
 }) => {
-  const [src, setSrc] = useState(asset.local);
+  const getInitialSrc = (a: AssetSource | string) =>
+    typeof a === "string" ? a : a.local;
+
+  const [src, setSrc] = useState(() => getInitialSrc(asset));
   const [triedRemote, setTriedRemote] = useState(false);
 
   useEffect(() => {
-    setSrc(asset.local);
+    setSrc(getInitialSrc(asset));
     setTriedRemote(false);
-  }, [asset.local]);
+  }, [asset]);
+
+  const defaultAlt = typeof asset === "string" ? "" : asset.alt;
+  const remoteUrl = typeof asset === "string" ? undefined : asset.remote;
 
   return (
     <img
       src={src}
-      alt={alt ?? asset.alt}
+      alt={alt ?? defaultAlt}
       className={className}
       onError={() => {
-        if (!triedRemote && asset.remote && src !== asset.remote) {
+        if (!triedRemote && remoteUrl && src !== remoteUrl) {
           setTriedRemote(true);
-          setSrc(asset.remote);
+          setSrc(remoteUrl);
         }
       }}
       {...rest}
@@ -130,7 +136,7 @@ export const Reveal: React.FC<RevealProps> = ({
 };
 
 interface ParallaxImageCardProps {
-  asset: AssetSource;
+  asset: AssetSource | string;
   caption?: string;
   badge?: string;
   aspectClass?: string;

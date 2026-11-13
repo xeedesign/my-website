@@ -79,25 +79,25 @@ export const HomePage: React.FC<HomePageProps> = ({
     route: PageRoute;
   }[] = [
     {
-      asset: "/assets/facility/hw1 (1).png",
+      asset: ABBESS_ASSETS.hw1,
       badge: "Navi Mumbai Hub",
       caption: "ABBESS Healthcare OPC Pvt. Ltd. Scientific R&D Team",
       route: "how-and-where",
     },
     {
-      asset: "/assets/facility/research (1).png",
+      asset: ABBESS_ASSETS.researchLab1,
       badge: "Formulation R&D",
       caption: "Formulation Development & Stability Testing Laboratory",
       route: "research-facility",
     },
     {
-      asset: "/assets/facility/product1 (1).png",
+      asset: ABBESS_ASSETS.product1,
       badge: "GMP Scale-Up",
       caption: "Pilot & Pivotal Bioequivalence (BE) Batch Equipment",
       route: "product-development",
     },
     {
-      asset: "/assets/facility/map-2.png",
+      asset: ABBESS_ASSETS.mapAbout,
       badge: "Global Footprint",
       caption: "Operating Across Navi Mumbai, India & Malta, Europe",
       route: "about-us",
