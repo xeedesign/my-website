@@ -243,7 +243,7 @@ export const HOME_CONTENT = {
     {
       id: "slide-1",
       eyebrow: "Creating a better tomorrow For health and happiness",
-      headline: "nurturing minds transforming healthcare through innovations & expertise",
+      headline: "Nurturing minds transforming healthcare through innovations & expertise",
       ctaText: "View More",
       ctaRoute: "about-us" as PageRoute,
       desktopImage: ABBESS_ASSETS.heroSlide1Desktop,
@@ -252,7 +252,7 @@ export const HOME_CONTENT = {
     {
       id: "slide-2",
       eyebrow: "Creating a better tomorrow For health and happiness",
-      headline: "nurturing minds transforming healthcare through innovations & expertise",
+      headline: "Nurturing minds transforming healthcare through innovations & expertise",
       ctaText: "View More",
       ctaRoute: "about-us" as PageRoute,
       desktopImage: ABBESS_ASSETS.heroSlide2,
